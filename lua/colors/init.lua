@@ -31,7 +31,7 @@ local groups = {
 }
 
 -- Method that actually makes the stuff above transparent.
-local function colorMyPencils()
+function ColorMyPencils()
     for _, i in pairs(groups) do
         vim.api.nvim_set_hl(0, i, { bg = 'none' })
     end
@@ -47,7 +47,7 @@ local function colorMyPencils()
 end
 
 function M.setup()
-    colorMyPencils()
+    ColorMyPencils()
 end
 
 return M
