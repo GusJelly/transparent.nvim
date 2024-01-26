@@ -43,5 +43,3 @@ function ColorMyPencils()
 
     vim.api.nvim_set_hl(0, "CursorLineNr", { fg = 'none' })
 end
-
-ColorMyPencils()
