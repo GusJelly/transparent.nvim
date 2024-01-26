@@ -1,5 +1,3 @@
-M = {}
-
 -- Groups supposed to be transparent
 ---@type table<string>
 local groups = {
@@ -31,7 +29,7 @@ local groups = {
 }
 
 -- Method that actually makes the stuff above transparent.
-function ColorMyPencils()
+local function colorMyPencils()
     for _, i in pairs(groups) do
         vim.api.nvim_set_hl(0, i, { bg = 'none' })
     end
@@ -46,8 +44,4 @@ function ColorMyPencils()
     vim.api.nvim_set_hl(0, "CursorLineNr", { fg = 'none' })
 end
 
-function M.setup()
-    ColorMyPencils()
-end
-
-return M
+colorMyPencils()
