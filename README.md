@@ -11,8 +11,8 @@ A simple plugin that will make **any** colorscheme **transparent**.
 
 ## Usage
 
-This plugin created a global function called `ColorMyPencils()`.
-to make everything transparent, we need to call this function **after**
+This plugin creates a global function called `ColorMyPencils()`.
+To make everything transparent, call this function **after**
 setting/changing the colorscheme.
 
 Something like:
