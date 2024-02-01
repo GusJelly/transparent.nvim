@@ -36,6 +36,7 @@ function ColorMyPencils()
 
     -- Getting colorscheme for checking some stuff,
     -- we are basically making sure rose-pine does not use certain colors
+    -- because they are ugly
     local colorscheme = vim.g.colors_name
     if colorscheme == 'rose-pine' then
         vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#2F2F2F" })
