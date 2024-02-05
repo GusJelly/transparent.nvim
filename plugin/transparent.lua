@@ -10,7 +10,7 @@ local groups = {
     "TelescopeNormal",
     "TelescopePromptNormal",
     "TelescopeBorder",
-    "LineNr",
+    -- "LineNr",
     "EndOfBuffer",
     "FloatTitle",
     "ZenBg",
@@ -41,6 +41,4 @@ function ColorMyPencils()
     if colorscheme == 'rose-pine' then
         vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#2F2F2F" })
     end
-
-    vim.api.nvim_set_hl(0, "CursorLineNr", { fg = 'none' })
 end
