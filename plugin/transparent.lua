@@ -26,7 +26,7 @@ local groups = {
     "TelescopeResultsTitle",
     "TelescopePromptBorder",
     "TelescopePromptPrefix",
-    "DevIconDefault",
+    "Conceal"
 }
 
 -- Method that actually makes the stuff above transparent.
