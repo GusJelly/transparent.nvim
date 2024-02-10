@@ -33,6 +33,13 @@ local groups = {
 function ColorMyPencils()
     for _, i in pairs(groups) do
         vim.cmd("highlight " .. i .. " guibg=NONE")
-        
     end
 end
+
+-- Ensure ColorMyPencils() is loaded every time a plugin loads to avoid bullshit
+-- around lazy loading
+vim.api.nvim_create_autocmd("BufEnter", {
+    callback = function()
+        ColorMyPencils()
+    end
+})
