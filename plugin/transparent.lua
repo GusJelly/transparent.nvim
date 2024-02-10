@@ -32,6 +32,7 @@ local groups = {
 -- Method that actually makes the stuff above transparent.
 function ColorMyPencils()
     for _, i in pairs(groups) do
-        vim.api.nvim_set_hl(0, i, { bg = 'none' })
+        vim.cmd("highlight " .. i .. " guibg=NONE")
+        
     end
 end
