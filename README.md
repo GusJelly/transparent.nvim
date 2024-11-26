@@ -3,6 +3,7 @@
 A simple plugin that will make **any** colorscheme **transparent**.
 
 ## Installation
+
 ```lua
 {
     'GusJelly/transparent.nvim',
@@ -11,16 +12,10 @@ A simple plugin that will make **any** colorscheme **transparent**.
 
 ## Usage
 
-This plugin creates a global function called `ColorMyPencils()`.
-To make everything transparent, call this function **after**
-setting/changing the colorscheme.
+Just a normal `setup()` function call:
 
-Something like:
 ```lua
-vim.cmd([[
-    colorscheme rose-pine
-    lua ColorMyPencils()
-]])
+require("transparent").setup()
 ```
 
 ## DISCLAIMER
