@@ -16,14 +16,14 @@ local groups = {
   "NormalNC",
   "WinSeparator",
   "SignColumn",
-  "TelescopeBorder",
-  "TelescopeNormal",
-  "TelescopePromptBorder",
-  "TelescopePromptTitle",
-  "WinBar",
+  -- "TelescopeBorder",
+  -- "TelescopeNormal",
+  -- "TelescopePromptBorder",
+  -- "TelescopePromptTitle",
   "LineNr",
   "LineNrAbove",
   "LineNrBelow",
+  "EndOfBuffer",
 }
 
 -- Method that actually makes the stuff above transparent.
