@@ -6,6 +6,7 @@ local function set_hl(group, options)
   vim.api.nvim_set_hl(
     0,
     group,
+    ---@diagnostic disable-next-line: param-type-mismatch
     vim.tbl_deep_extend("force", existing_highlight_group_table, options)
   )
 end

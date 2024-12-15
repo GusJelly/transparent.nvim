@@ -6,11 +6,6 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-# Use tabs for indentation on go files
-[Makefile]
-indent_style = tab
-
-# Use 2 space indentation for markdown and json
 [*.{md,lua}]
 indent_style = space
-indent_size = 4
+indent_size = 2
